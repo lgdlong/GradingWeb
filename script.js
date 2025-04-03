@@ -20,7 +20,11 @@ function generateCode() {
 function copyToClipboard() {
     const output = document.getElementById('output').textContent;
     navigator.clipboard.writeText(output).then(() => {
-        alert('Copied to clipboard!');
+        const copyButton = document.querySelector('.copy-btn');
+        copyButton.textContent = 'Copied';
+        setTimeout(() => {
+            copyButton.textContent = 'Copy';
+        }, 2000); // Reset text after 2 seconds
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });
