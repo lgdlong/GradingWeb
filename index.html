@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Nhập số lượng câu hỏi</h2>
+        <input type="number" id="questionCount" min="1" value="3">
+        <button onclick="generateCode()">Tạo mã</button>
+
+        <div class="pre-container">
+            <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Tính điểm</h2>
+        <input type="text" id="input-text" placeholder="Đáp án">
+        <button class="btn-text" onclick="calculateScore()">Tính điểm</button>
+        <br/>
+        <p id="score"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

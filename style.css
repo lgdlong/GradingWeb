@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-text {
+    margin-left: 10px;
+}
+
+pre {
+    background: #eee;
+    padding: 15px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    border-radius: 3px;
+}
+
+.pre-container {
+    position: relative;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #aaaaaa;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    border: black 1px solid;
+    display: none; /* Hidden by default */
+}
+
+.copy-btn:hover {
+    background: #878787;
+}
+
+#score {
+    font-size: 24px;
+    margin-top: 50px;
+}
