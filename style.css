@@ -82,5 +82,23 @@ pre {
         margin-top: 10px;
         margin-left: 0;
     }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: grey;
+    font-size: 14px;
+    font-style: italic;
+    background: none;
 }
 
