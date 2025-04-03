@@ -42,6 +42,8 @@ function calculateScore() {
     const correctAnswers = (inputText.match(/\+/g) || []).length; // Count '+' symbols
     const questionNumber = (inputText.match(/\./g) || []).length; // Count '+' symbols
     const score = (correctAnswers / questionNumber) * 10; // Calculate score on base 10
-
+    document.getElementById('total').innerHTML = `Tổng câu hỏi: ${questionNumber}`; // Show score element
+    document.getElementById('corrects').innerHTML = `Số câu đúng: ${correctAnswers}`; // Show score element
+    document.getElementById('wrongs').innerHTML = `Số câu sai: ${questionNumber - correctAnswers}`; // Show score element
     document.getElementById('score').innerHTML = `Điểm của bạn: <b>${score.toFixed(2)}</b>`;
 }
